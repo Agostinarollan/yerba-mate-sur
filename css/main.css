@@ -1,0 +1,297 @@
+header {
+  background-color: purple;
+}
+header .nav-logo {
+  background-color: aqua;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .nav-logo img {
+  width: 50px;
+  height: 50px;
+}
+header .navbar-expand-lg .navbar-nav {
+  margin: 0 auto;
+  gap: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+@media (min-width: 576px) {
+  header .nav-logo {
+    height: 100px;
+  }
+  header .nav-logo img {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media (min-width: 768px) {
+  header .nav-logo {
+    height: 150px;
+  }
+  header .nav-logo img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (min-width: 992px) {
+  header .nav-logo {
+    height: 170px;
+  }
+  header .nav-logo img {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (min-width: 1220px) {
+  header .nav-logo {
+    height: 200px;
+  }
+  header .nav-logo img {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+.hero-carrousel {
+  width: 100%;
+  height: 200px;
+}
+.hero-carrousel img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: 0 70%;
+}
+@media (min-width: 576px) {
+  .hero-carrousel {
+    height: 300px;
+  }
+  .hero-carrousel img {
+    height: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .hero-carrousel {
+    height: 600px;
+  }
+  .hero-carrousel img {
+    height: 600px;
+  }
+}
+
+.productos-contenedor {
+  background-color: aqua;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.productos-contenedor .productos-card {
+  padding-top: 10px;
+  background-color: red;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.productos-contenedor .productos-card .productos-card-img {
+  margin-top: 10px;
+  position: relative;
+}
+.productos-contenedor .productos-card .productos-card-img .card-img-1 {
+  background-color: white;
+  width: 90px;
+  height: 100px;
+}
+.productos-contenedor .productos-card .productos-card-img .card-img-2 {
+  background-color: chartreuse;
+  width: 80px;
+  height: 90px;
+  position: absolute;
+  left: 7%;
+  bottom: -15%;
+  transform: translateX(-50%);
+}
+@media (min-width: 400px) {
+  .productos-contenedor .productos-card .productos-card-img .card-img-1 {
+    width: 100px;
+    height: 120px;
+  }
+  .productos-contenedor .productos-card .productos-card-img .card-img-2 {
+    width: 90px;
+    height: 110px;
+  }
+}
+@media (min-width: 552px) {
+  .productos-contenedor .productos-card .productos-card-img .card-img-1 {
+    width: 140px;
+    height: 160px;
+  }
+  .productos-contenedor .productos-card .productos-card-img .card-img-2 {
+    width: 120px;
+    height: 130px;
+  }
+}
+@media (min-width: 768px) {
+  .productos-contenedor .productos-card .productos-card-img .card-img-1 {
+    width: 160px;
+    height: 200px;
+  }
+  .productos-contenedor .productos-card .productos-card-img .card-img-2 {
+    width: 140px;
+    height: 160px;
+  }
+}
+@media (min-width: 992px) {
+  .productos-contenedor .productos-card .productos-card-img .card-img-1 {
+    width: 200px;
+    height: 230px;
+  }
+  .productos-contenedor .productos-card .productos-card-img .card-img-2 {
+    width: 160px;
+    height: 170px;
+  }
+}
+@media (min-width: 1220px) {
+  .productos-contenedor .productos-card .productos-card-img .card-img-1 {
+    width: 200px;
+    height: 220px;
+  }
+  .productos-contenedor .productos-card .productos-card-img .card-img-2 {
+    width: 190px;
+    height: 200px;
+  }
+}
+.productos-contenedor .productos-card .productos-card-texto {
+  background-color: chocolate;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.productos-contenedor .productos-card .productos-card-texto h4 {
+  font-size: 30px;
+}
+@media (min-width: 400px) {
+  .productos-contenedor .productos-card .productos-card-texto h4 {
+    font-size: 25px;
+  }
+}
+@media (min-width: 552px) {
+  .productos-contenedor .productos-card .productos-card-texto {
+    margin-top: 30px;
+  }
+  .productos-contenedor .productos-card .productos-card-texto h4 {
+    font-size: 25px;
+  }
+}
+@media (min-width: 768px) {
+  .productos-contenedor .productos-card .productos-card-texto {
+    margin-top: 30px;
+  }
+  .productos-contenedor .productos-card .productos-card-texto h4 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .productos-contenedor .productos-card .productos-card-texto {
+    margin-top: 30px;
+  }
+  .productos-contenedor .productos-card .productos-card-texto h4 {
+    font-size: 50px;
+  }
+}
+.productos-contenedor .productos-card .productos-card-button {
+  background-color: chocolate;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.productos-contenedor .productos-card .productos-card-button a {
+  font-size: 15px;
+}
+@media (min-width: 400px) {
+  .productos-contenedor .productos-card .productos-card-button a {
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .productos-contenedor .productos-card .productos-card-button a {
+    font-size: 20px;
+  }
+}
+
+.imagen-mate {
+  width: auto;
+  height: 150px;
+  margin: 10px 0;
+}
+.imagen-mate img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+@media (min-width: 600px) {
+  .imagen-mate img {
+    width: 100%;
+    height: 200px;
+  }
+}
+@media (min-width: 768px) {
+  .imagen-mate img {
+    width: 100%;
+    height: 200px;
+  }
+}
+@media (min-width: 992px) {
+  .imagen-mate img {
+    width: 100%;
+    height: 300px;
+  }
+}
+@media (min-width: 1220px) {
+  .imagen-mate img {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+.calidad-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0px;
+}
+.calidad-contenedor .calidad-imagen {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.calidad-contenedor .calidad-imagen img {
+  width: 150px;
+  height: 200px;
+  border-radius: 50px 0 50px 0;
+}
+.calidad-contenedor .calidad-descripcion {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 10px;
+}
+.calidad-contenedor .calidad-descripcion h3 {
+  font-size: 20px;
+}
+.calidad-contenedor .calidad-descripcion h4 {
+  font-size: 15px;
+}
+.calidad-contenedor .calidad-descripcion p {
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=main.css.map */

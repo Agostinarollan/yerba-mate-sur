@@ -1,0 +1,35 @@
+.imagen-mate{
+    width: auto;
+    height: 150px;
+    margin: 10px 0;
+    img{
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+    @media (min-width: 600px) {
+        img{
+            width: 100%;
+            height: 200px;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        img{
+            width: 100%;
+            height: 200px;
+        } 
+    }
+    @media (min-width: 992px) {
+        img{
+            width: 100%;
+            height: 300px;
+        } 
+    }
+    @media (min-width: 1220px) {
+        img{
+            width: 100%;
+            height: 400px;
+        } 
+    }
+}

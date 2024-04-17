@@ -1,0 +1,45 @@
+.calidad-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+    .calidad-imagen {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px; // Añade un espacio entre la imagen y el texto
+        img {
+            width: 150px;
+            height: 200px;
+            border-radius: 50px 0 50px 0;
+        }
+    }
+    .calidad-descripcion {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 10px; // Añade un espacio entre la imagen y el texto
+        h3 {
+            font-size: 20px;
+        }
+        h4 {
+            font-size: 15px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+    @media (min-width: 600px) {
+             ;
+    }
+    
+    @media (min-width: 768px) {
+        
+    }
+    @media (min-width: 992px) {
+         
+    }
+    @media (min-width: 1220px) {
+    }
+}
