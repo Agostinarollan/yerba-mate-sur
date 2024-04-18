@@ -325,6 +325,54 @@ header .navbar-expand-lg .navbar-nav a {
   background-color: #040D12;
   font-size: 15px;
 }
+@media (min-width: 600px) {
+  .calidad-contenedor .calidad-descripcion h3 {
+    font-size: 25px;
+  }
+  .calidad-contenedor .calidad-descripcion h4 {
+    font-size: 20px;
+  }
+  .calidad-contenedor .calidad-descripcion p {
+    font-size: 15px;
+  }
+  .calidad-contenedor .calidad-descripcion a {
+    border: 1px solid #040D12;
+    background-color: #040D12;
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .calidad-contenedor .calidad-descripcion h3 {
+    font-size: 35px;
+  }
+  .calidad-contenedor .calidad-descripcion h4 {
+    font-size: 25px;
+  }
+  .calidad-contenedor .calidad-descripcion p {
+    font-size: 20px;
+  }
+  .calidad-contenedor .calidad-descripcion a {
+    border: 1px solid #040D12;
+    background-color: #040D12;
+    font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .calidad-contenedor .calidad-descripcion h3 {
+    font-size: 40px;
+  }
+  .calidad-contenedor .calidad-descripcion h4 {
+    font-size: 30px;
+  }
+  .calidad-contenedor .calidad-descripcion p {
+    font-size: 25px;
+  }
+  .calidad-contenedor .calidad-descripcion a {
+    border: 1px solid #040D12;
+    background-color: #040D12;
+    font-size: 20px;
+  }
+}
 .nosotros-contenedor {
   background-color: #5C8374;
   display: flex;
