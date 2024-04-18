@@ -1,5 +1,12 @@
+@import "utilidades/variables";
+@import "base/reset";
 @import "layout/navbar";
 @import "layout/hero";
 @import "layout/productos";
 @import "layout/divsion";
 @import "layout/calidad";
+@import "layout/nosotros";
+@import "layout/footer";
+ main{
+    background-color: $color-primario;
+ }

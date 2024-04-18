@@ -1,34 +1,87 @@
+
 .calidad-contenedor{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin: 15px 0px;
+    padding: 30px;
+    background-color: $color-terciario;
+    margin-top: 20px;
+
+    .calidad-card{
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: space-between;
+        margin-top: 15px;
+    }
     .calidad-imagen {
         display: flex;
         align-items: center;
-        margin-bottom: 10px; // Añade un espacio entre la imagen y el texto
+        justify-content: center;
+        margin: 0 auto;
         img {
-            width: 150px;
-            height: 200px;
+            width: 100px;
+            height: 150px;
             border-radius: 50px 0 50px 0;
+            position: relative;
+            z-index: 2;
+        }
+        @media (min-width: 600px) {
+            img{
+                width: 200px;
+                height: 250px;
+                border-radius: 80px 0 80px 0;
+            }
+        }
+        @media (min-width: 800px) {
+            img{
+                width: 250px;
+                height: 300px;
+                border-radius: 100px 0 100px 0;
+            }
+        }
+        @media (min-width: 992px) {
+            img{
+                width: 300px;
+                height: 350px;
+                border-radius: 100px 0 100px 0;
+            }
+        }
+        @media (min-width: 1220px) {
+            img{
+                width: 350px;
+                height: 400px;
+                border-radius: 100px 0 100px 0;
+            }
         }
     }
     .calidad-descripcion {
+        background-color: none;
+        color: $color-secundario;
         display: flex;
         flex-direction: column;
         text-align: center;
-        margin-left: 10px; // Añade un espacio entre la imagen y el texto
+        justify-content: space-evenly;
+        margin: 0 auto;
         h3 {
             font-size: 20px;
+           
         }
         h4 {
             font-size: 15px;
+            
         }
         p {
             font-size: 15px;
+          
         }
+        a{
+            border: 1px solid $color-primario;
+            background-color: $color-primario;
+            font-size: 15px;
+           
+            
+        }
+
     }
     @media (min-width: 600px) {
             

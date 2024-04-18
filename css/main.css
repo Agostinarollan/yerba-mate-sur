@@ -1,8 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 header {
-  background-color: purple;
+  background-color: #040D12;
 }
 header .nav-logo {
-  background-color: aqua;
+  background-color: #040D12;
   height: 70px;
   display: flex;
   justify-content: center;
@@ -15,7 +21,10 @@ header .nav-logo img {
 header .navbar-expand-lg .navbar-nav {
   margin: 0 auto;
   gap: 30px;
-  font-size: 20px;
+}
+header .navbar-expand-lg .navbar-nav a {
+  color: #ECE3CE;
+  font-size: 30px;
   font-weight: bold;
 }
 @media (min-width: 576px) {
@@ -83,38 +92,40 @@ header .navbar-expand-lg .navbar-nav {
 }
 
 .productos-contenedor {
-  background-color: aqua;
+  background-color: #040D12;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding: 15px;
 }
 .productos-contenedor .productos-card {
   padding-top: 10px;
-  background-color: red;
+  background-color: #5C8374;
   width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 10px;
+  border-radius: 80px 20px;
 }
 .productos-contenedor .productos-card .productos-card-img {
   margin-top: 10px;
   position: relative;
 }
 .productos-contenedor .productos-card .productos-card-img .card-img-1 {
-  background-color: white;
+  background-color: none;
   width: 90px;
   height: 100px;
 }
 .productos-contenedor .productos-card .productos-card-img .card-img-2 {
-  background-color: chartreuse;
+  background-color: none;
   width: 80px;
   height: 90px;
   position: absolute;
-  left: 7%;
-  bottom: -15%;
+  left: 20%;
+  bottom: -12%;
   transform: translateX(-50%);
 }
 @media (min-width: 400px) {
@@ -168,10 +179,12 @@ header .navbar-expand-lg .navbar-nav {
   }
 }
 .productos-contenedor .productos-card .productos-card-texto {
-  background-color: chocolate;
+  background-color: none;
   display: flex;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 15px;
+  padding: 10px;
+  color: #ECE3CE;
 }
 .productos-contenedor .productos-card .productos-card-texto h4 {
   font-size: 30px;
@@ -206,12 +219,14 @@ header .navbar-expand-lg .navbar-nav {
   }
 }
 .productos-contenedor .productos-card .productos-card-button {
-  background-color: chocolate;
+  background-color: none;
   display: flex;
   justify-content: center;
   margin: 20px 0;
 }
 .productos-contenedor .productos-card .productos-card-button a {
+  border: 1px solid #040D12;
+  background-color: #040D12;
   font-size: 15px;
 }
 @media (min-width: 400px) {
@@ -226,63 +241,75 @@ header .navbar-expand-lg .navbar-nav {
 }
 
 .imagen-mate {
-  width: auto;
-  height: 150px;
-  margin: 10px 0;
-}
-.imagen-mate img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-}
-@media (min-width: 600px) {
-  .imagen-mate img {
-    width: 100%;
-    height: 200px;
-  }
-}
-@media (min-width: 768px) {
-  .imagen-mate img {
-    width: 100%;
-    height: 200px;
-  }
-}
-@media (min-width: 992px) {
-  .imagen-mate img {
-    width: 100%;
-    height: 300px;
-  }
-}
-@media (min-width: 1220px) {
-  .imagen-mate img {
-    width: 100%;
-    height: 400px;
-  }
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  background-color: #040D12;
 }
 
 .calidad-contenedor {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   width: 100%;
-  justify-content: center;
-  align-items: center;
-  margin: 15px 0px;
+  padding: 30px;
+  background-color: #5C8374;
+  margin-top: 20px;
+}
+.calidad-contenedor .calidad-card {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  margin-top: 15px;
 }
 .calidad-contenedor .calidad-imagen {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  justify-content: center;
+  margin: 0 auto;
 }
 .calidad-contenedor .calidad-imagen img {
-  width: 150px;
-  height: 200px;
+  width: 100px;
+  height: 150px;
   border-radius: 50px 0 50px 0;
+  position: relative;
+  z-index: 2;
+}
+@media (min-width: 600px) {
+  .calidad-contenedor .calidad-imagen img {
+    width: 200px;
+    height: 250px;
+    border-radius: 80px 0 80px 0;
+  }
+}
+@media (min-width: 800px) {
+  .calidad-contenedor .calidad-imagen img {
+    width: 250px;
+    height: 300px;
+    border-radius: 100px 0 100px 0;
+  }
+}
+@media (min-width: 992px) {
+  .calidad-contenedor .calidad-imagen img {
+    width: 300px;
+    height: 350px;
+    border-radius: 100px 0 100px 0;
+  }
+}
+@media (min-width: 1220px) {
+  .calidad-contenedor .calidad-imagen img {
+    width: 350px;
+    height: 400px;
+    border-radius: 100px 0 100px 0;
+  }
 }
 .calidad-contenedor .calidad-descripcion {
+  background-color: none;
+  color: #ECE3CE;
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-left: 10px;
+  justify-content: space-evenly;
+  margin: 0 auto;
 }
 .calidad-contenedor .calidad-descripcion h3 {
   font-size: 20px;
@@ -292,6 +319,157 @@ header .navbar-expand-lg .navbar-nav {
 }
 .calidad-contenedor .calidad-descripcion p {
   font-size: 15px;
+}
+.calidad-contenedor .calidad-descripcion a {
+  border: 1px solid #040D12;
+  background-color: #040D12;
+  font-size: 15px;
+}
+.nosotros-contenedor {
+  background-color: #5C8374;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  gap: 10px;
+  margin-top: 30px;
+}
+.nosotros-contenedor .nosotros-titulo {
+  background-image: url(/asset/img/mate-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ECE3CE;
+  padding: 20px;
+}
+.nosotros-contenedor .nosotros-titulo h2 {
+  font-size: 0px;
+}
+.nosotros-contenedor .nosotros-texto {
+  color: #ECE3CE;
+}
+.nosotros-contenedor .nosotros-texto p {
+  font-size: 12px;
+  margin: 0 auto;
+}
+@media (min-width: 400px) {
+  .nosotros-contenedor .nosotros-titulo h2 {
+    font-size: 70px;
+  }
+  .nosotros-contenedor .nosotros-titulo h3 {
+    font-size: 30px;
+  }
+  .nosotros-contenedor .nosotros-texto p {
+    font-size: 15px;
+  }
+}
+@media (min-width: 600px) {
+  .nosotros-contenedor .nosotros-titulo h2 {
+    font-size: 100px;
+  }
+  .nosotros-contenedor .nosotros-titulo h3 {
+    font-size: 60px;
+  }
+  .nosotros-contenedor .nosotros-texto p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 700px) {
+  .nosotros-contenedor .nosotros-titulo h2 {
+    font-size: 110px;
+  }
+  .nosotros-contenedor .nosotros-titulo h3 {
+    font-size: 60px;
+  }
+  .nosotros-contenedor .nosotros-texto p {
+    font-size: 30px;
+  }
+}
+@media (min-width: 900px) {
+  .nosotros-contenedor .nosotros-titulo h2 {
+    font-size: 150px;
+  }
+  .nosotros-contenedor .nosotros-titulo h3 {
+    font-size: 60px;
+  }
+  .nosotros-contenedor .nosotros-texto p {
+    font-size: 35px;
+  }
+}
+@media (min-width: 1200px) {
+  .nosotros-contenedor .nosotros-titulo h2 {
+    font-size: 150px;
+  }
+  .nosotros-contenedor .nosotros-titulo h3 {
+    font-size: 70px;
+  }
+  .nosotros-contenedor .nosotros-texto p {
+    font-size: 40px;
+  }
+}
+
+footer {
+  background-color: #040D12;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+footer .primer-seccion-footer {
+  padding: 25px;
+}
+footer .primer-seccion-footer h2 {
+  color: #ECE3CE;
+  font-size: 20px;
+}
+footer .segunda-seccion-footer {
+  display: flex;
+  flex-direction: column;
+}
+footer .segunda-seccion-footer h3 {
+  color: #ECE3CE;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+footer .segunda-seccion-footer .redes-footer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+footer .segunda-seccion-footer .redes-footer img {
+  width: 30px;
+}
+footer .logo-footer {
+  padding: 30px;
+}
+footer .logo-footer img {
+  width: 100px;
+}
+@media (min-width: 600px) {
+  footer .primer-seccion-footer h2 {
+    font-size: 30px;
+  }
+  footer .segunda-seccion-footer h3 {
+    font-size: 30px;
+  }
+  footer .segunda-seccion-footer .redes-footer img {
+    width: 40px;
+  }
+}
+@media (min-width: 900px) {
+  footer .primer-seccion-footer h2 {
+    font-size: 40px;
+  }
+  footer .segunda-seccion-footer h3 {
+    font-size: 40px;
+  }
+  footer .segunda-seccion-footer .redes-footer img {
+    width: 50px;
+  }
+}
+
+main {
+  background-color: #040D12;
 }
 
 /*# sourceMappingURL=main.css.map */
