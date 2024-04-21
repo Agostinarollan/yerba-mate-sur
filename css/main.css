@@ -95,15 +95,16 @@ header .navbar-toggler {
 }
 
 .productos-contenedor {
-  background-color: #040D12;
-  width: 100%;
+  background-image: url(/asset/img/Slice\ 1bg-yerbamate1.png);
+  background-size: cover;
+  width: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 15px;
 }
 .productos-contenedor .productos-card {
-  padding-top: 10px;
+  padding: 5px 30px;
   background-color: #5C8374;
   width: auto;
   display: flex;
@@ -132,6 +133,21 @@ header .navbar-toggler {
   left: 20%;
   bottom: -12%;
   transform: translateX(-50%);
+  padding-bottom: 5px;
+}
+.productos-contenedor .productos-card .productos-card-img .card-img-3 {
+  background-color: none;
+  width: 155px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+}
+.productos-contenedor .productos-card .productos-card-img .card-img-4 {
+  background-color: none;
+  width: 155px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
 }
 @media (min-width: 400px) {
   .productos-contenedor .productos-card .productos-card-img .card-img-1 {
@@ -152,6 +168,20 @@ header .navbar-toggler {
     width: 120px;
     height: 130px;
   }
+  .productos-contenedor .productos-card .productos-card-img .card-img-3 {
+    background-color: none;
+    width: 165px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+  }
+  .productos-contenedor .productos-card .productos-card-img .card-img-4 {
+    background-color: none;
+    width: 165px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+  }
 }
 @media (min-width: 768px) {
   .productos-contenedor .productos-card .productos-card-img .card-img-1 {
@@ -161,6 +191,20 @@ header .navbar-toggler {
   .productos-contenedor .productos-card .productos-card-img .card-img-2 {
     width: 140px;
     height: 160px;
+  }
+  .productos-contenedor .productos-card .productos-card-img .card-img-3 {
+    background-color: none;
+    width: 180px;
+    height: 185px;
+    display: flex;
+    justify-content: center;
+  }
+  .productos-contenedor .productos-card .productos-card-img .card-img-4 {
+    background-color: none;
+    width: 180px;
+    height: 185px;
+    display: flex;
+    justify-content: center;
   }
 }
 @media (min-width: 992px) {
@@ -172,6 +216,20 @@ header .navbar-toggler {
     width: 160px;
     height: 170px;
   }
+  .productos-contenedor .productos-card .productos-card-img .card-img-3 {
+    background-color: none;
+    width: 190px;
+    height: 195px;
+    display: flex;
+    justify-content: center;
+  }
+  .productos-contenedor .productos-card .productos-card-img .card-img-4 {
+    background-color: none;
+    width: 190px;
+    height: 195px;
+    display: flex;
+    justify-content: center;
+  }
 }
 @media (min-width: 1220px) {
   .productos-contenedor .productos-card .productos-card-img .card-img-1 {
@@ -182,57 +240,62 @@ header .navbar-toggler {
     width: 190px;
     height: 200px;
   }
+  .productos-contenedor .productos-card .productos-card-img .card-img-3 {
+    background-color: none;
+    width: 335px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+  }
+  .productos-contenedor .productos-card .productos-card-img .card-img-4 {
+    background-color: none;
+    width: 335px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+  }
 }
 .productos-contenedor .productos-card .productos-card-texto {
   background-color: none;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 15px;
-  padding: 10px;
   color: #ECE3CE;
+  text-align: center;
 }
 .productos-contenedor .productos-card .productos-card-texto h4 {
-  font-size: 30px;
+  font-size: 12px;
 }
 @media (min-width: 400px) {
   .productos-contenedor .productos-card .productos-card-texto h4 {
-    font-size: 25px;
+    font-size: 15px;
   }
 }
 @media (min-width: 552px) {
-  .productos-contenedor .productos-card .productos-card-texto {
-    margin-top: 30px;
-  }
   .productos-contenedor .productos-card .productos-card-texto h4 {
-    font-size: 25px;
+    font-size: 15px;
   }
 }
 @media (min-width: 768px) {
-  .productos-contenedor .productos-card .productos-card-texto {
-    margin-top: 30px;
-  }
   .productos-contenedor .productos-card .productos-card-texto h4 {
-    font-size: 30px;
+    font-size: 18px;
   }
 }
 @media (min-width: 992px) {
-  .productos-contenedor .productos-card .productos-card-texto {
-    margin-top: 30px;
-  }
   .productos-contenedor .productos-card .productos-card-texto h4 {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 .productos-contenedor .productos-card .productos-card-button {
   background-color: none;
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 .productos-contenedor .productos-card .productos-card-button a {
   border: 1px solid #040D12;
   background-color: #040D12;
-  font-size: 15px;
+  font-size: 10px;
   font-weight: bold;
 }
 @media (min-width: 400px) {
@@ -249,17 +312,18 @@ header .navbar-toggler {
 .imagen-mate {
   display: flex;
   justify-content: center;
-  padding: 30px;
-  background-color: #040D12;
+  padding: 0px;
+  background-image: url(/asset/img/Frame\ 1bg-yerba-2.png);
+  background-size: contain;
 }
 
 .calidad-contenedor {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 30px;
   background-color: none;
-  margin-top: 20px;
+  background-image: url(/asset/img/Slice\ 1bg-yerbamate1.png);
+  background-size: cover;
 }
 .calidad-contenedor .calidad-card {
   display: flex;
@@ -283,7 +347,7 @@ header .navbar-toggler {
   width: 200px;
   height: 220px;
   border-radius: 30px 30px 30px 30px;
-  box-shadow: 10px -6px 9px -4px rgb(92, 131, 116);
+  box-shadow: 10px -6px 1px 1px rgb(92, 131, 116);
   position: relative;
   z-index: 2;
   margin-bottom: 10px;

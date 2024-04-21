@@ -1,12 +1,13 @@
 .productos-contenedor{
-    background-color: $color-primario; 
-    width: 100%;
+    background-image: url(/asset/img/Slice\ 1bg-yerbamate1.png);
+    background-size: cover;
+    width: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 15px;
     .productos-card{
-        padding-top: 10px;
+        padding: 5px 30px;
         background-color: $color-terciario;
         width: auto;
         display: flex;
@@ -15,6 +16,7 @@
         justify-content: center;
         margin-top: 10px;
         border-radius: 20px 20px;
+        
         .productos-card-img{
             margin-top: 10px;
             position: relative;
@@ -33,6 +35,21 @@
             left: 20%;
             bottom: -12%;
             transform: translateX(-50%); 
+            padding-bottom:5px;
+           }
+           .card-img-3{
+            background-color:none;
+            width: 155px;
+            height: 160px;
+            display: flex;
+            justify-content: center;
+           }
+           .card-img-4{
+            background-color:none;
+            width: 155px;
+            height: 160px;
+            display: flex;
+            justify-content: center;
            }
            @media (min-width: 400px) {
                 .card-img-1{
@@ -53,6 +70,20 @@
                     width: 120px;
                     height: 130px;
                 }
+                .card-img-3{
+                    background-color:none;
+                    width: 165px;
+                    height: 170px;
+                    display: flex;
+                    justify-content: center;
+                }
+                .card-img-4{
+                    background-color:none;
+                    width: 165px;
+                    height: 170px;
+                    display: flex;
+                    justify-content: center;
+                }
             }
             @media (min-width: 768px) {
                 .card-img-1{
@@ -62,6 +93,20 @@
                 .card-img-2{
                     width: 140px;
                     height: 160px;
+                }
+                .card-img-3{
+                    background-color:none;
+                    width: 180px;
+                    height: 185px;
+                    display: flex;
+                    justify-content: center;
+                }
+                .card-img-4{
+                    background-color:none;
+                    width: 180px;
+                    height: 185px;
+                    display: flex;
+                    justify-content: center;
                 }
             }
             @media (min-width: 992px) {
@@ -73,6 +118,20 @@
                     width: 160px;
                     height: 170px;
                 }
+                .card-img-3{
+                    background-color:none;
+                    width: 190px;
+                    height: 195px;
+                    display: flex;
+                    justify-content: center;
+                }
+                .card-img-4{
+                    background-color:none;
+                    width: 190px;
+                    height: 195px;
+                    display: flex;
+                    justify-content: center;
+                }
             }
             @media (min-width: 1220px) {
                 .card-img-1{
@@ -83,45 +142,56 @@
                     width: 190px;
                     height: 200px;
                 }
+                .card-img-3{
+                    background-color:none;
+                    width: 335px;
+                    height: 250px;
+                    display: flex;
+                    justify-content: center;
+                }
+                .card-img-4{
+                    background-color:none;
+                    width: 335px;
+                    height: 250px;
+                    display: flex;
+                    justify-content: center;
+                }
             }
         }
         .productos-card-texto{
             background-color: none;
             display: flex;
+            flex-direction: column;
             justify-content:center ;
-            margin-top:15px;
-            padding: 10px;
             color: $color-secundario;
+            text-align: center;
+            
             h4{
-                font-size: 30px;
+                font-size: 12px;
+                
             }
             @media (min-width: 400px) {
                 h4{
-                    font-size: 25px;
+                    font-size: 15px;
                 }
             }
             @media (min-width: 552px) {
-                &{
-                    margin-top: 30px;
-                }
+                
                 h4{
-                    font-size: 25px;
+                    font-size: 15px;
+                    
                 }
             }
             @media (min-width: 768px) {
-                &{
-                    margin-top: 30px;
-                }
+                
                 h4{
-                    font-size: 30px;
+                    font-size: 18px;
                 }
             }
             @media (min-width: 992px) {
-                &{
-                    margin-top: 30px;
-                }
+                
                 h4{
-                    font-size: 50px;
+                    font-size: 40px;
                 }
             }
         }
@@ -129,11 +199,11 @@
             background-color: none;
             display: flex;
             justify-content:center ;
-            margin: 20px 0;
+            margin: 10px 0;
             a{
                 border: 1px solid $color-primario;
                 background-color: $color-primario;
-                font-size: 15px;
+                font-size: 10px;
                 font-weight: bold;
             }
             @media (min-width: 400px) {
