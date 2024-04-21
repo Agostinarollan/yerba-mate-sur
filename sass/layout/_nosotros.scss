@@ -1,39 +1,29 @@
 .nosotros-contenedor{
     background-color: $color-terciario;
-   
     display: flex;
     flex-wrap: nowrap;
     align-items: baseline;
-    gap:10px;
+    gap:1px;
     margin-top: 30px;
-    .nosotros-titulo{
-        background-image: url(/asset/img/mate-1.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: $color-secundario;
-        padding: 20px;
-        h2{
-            font-size: 0px;
-        }
+    .nosotros-img{
+       img{
+        width: 75%;
+        height: 100%;
+       }
     }
     .nosotros-texto{
         color: $color-secundario;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
         p{
             font-size: 12px;
-            margin: 0 auto;
+            
         }    
         
     }
     @media (min-width: 400px) {
-        .nosotros-titulo{
-            h2{
-                font-size: 70px;
-            }
-            h3{
-                font-size: 30px;
-            }
-        }
+       
         .nosotros-texto{
             p{
                 font-size: 15px;
@@ -41,63 +31,36 @@
         }
     }
     @media (min-width: 600px) {
-        .nosotros-titulo{
-            h2{
-                font-size: 100px;
-            }
-            h3{
-                font-size: 60px;
-            }
-        }
+         
+        
         .nosotros-texto{
             p{
-                font-size: 18px;
+                font-size: 15px;
             }    
         }
     }
     @media (min-width: 700px) {
-        .nosotros-titulo{
-            h2{
-                font-size: 110px;
-            }
-            h3{
-                font-size: 60px;
-            }
-        }
+       
         .nosotros-texto{
             
             p{
-                font-size: 30px;
+                font-size: 15px;
             }    
         }
     }
-    @media (min-width: 900px) {
-        .nosotros-titulo{
-            h2{
-                font-size: 150px;
-            }
-            h3{
-                font-size: 60px;
-            }
-        }
+    @media (min-width: 992px) {
+        
         .nosotros-texto{
             p{
-                font-size: 35px;
+                font-size: 20px;
             }    
         }
     }
     @media (min-width: 1200px) {
-        .nosotros-titulo{
-            h2{
-                font-size: 150px;
-            }
-            h3{
-                font-size: 70px;
-            }
-        }
+        
         .nosotros-texto{  
             p{
-                font-size: 40px;
+                font-size: 20px;
             }    
         }
     }

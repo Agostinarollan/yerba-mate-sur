@@ -106,13 +106,14 @@ header .navbar-toggler {
 .productos-contenedor .productos-card {
   padding: 5px 30px;
   background-color: #5C8374;
-  width: auto;
+  width: 270px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 10px;
   border-radius: 20px 20px;
+  gap: 20px;
 }
 .productos-contenedor .productos-card .productos-card-img {
   margin-top: 10px;
@@ -138,14 +139,14 @@ header .navbar-toggler {
 .productos-contenedor .productos-card .productos-card-img .card-img-3 {
   background-color: none;
   width: 155px;
-  height: 160px;
+  height: 140px;
   display: flex;
   justify-content: center;
 }
 .productos-contenedor .productos-card .productos-card-img .card-img-4 {
   background-color: none;
   width: 155px;
-  height: 160px;
+  height: 250px;
   display: flex;
   justify-content: center;
 }
@@ -177,8 +178,8 @@ header .navbar-toggler {
   }
   .productos-contenedor .productos-card .productos-card-img .card-img-4 {
     background-color: none;
-    width: 165px;
-    height: 170px;
+    width: 155px;
+    height: 250px;
     display: flex;
     justify-content: center;
   }
@@ -201,8 +202,8 @@ header .navbar-toggler {
   }
   .productos-contenedor .productos-card .productos-card-img .card-img-4 {
     background-color: none;
-    width: 180px;
-    height: 185px;
+    width: 155px;
+    height: 250px;
     display: flex;
     justify-content: center;
   }
@@ -219,14 +220,14 @@ header .navbar-toggler {
   .productos-contenedor .productos-card .productos-card-img .card-img-3 {
     background-color: none;
     width: 190px;
-    height: 195px;
+    height: 190px;
     display: flex;
     justify-content: center;
   }
   .productos-contenedor .productos-card .productos-card-img .card-img-4 {
     background-color: none;
-    width: 190px;
-    height: 195px;
+    width: 155px;
+    height: 250px;
     display: flex;
     justify-content: center;
   }
@@ -237,19 +238,19 @@ header .navbar-toggler {
     height: 220px;
   }
   .productos-contenedor .productos-card .productos-card-img .card-img-2 {
-    width: 190px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
   .productos-contenedor .productos-card .productos-card-img .card-img-3 {
     background-color: none;
-    width: 335px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     display: flex;
     justify-content: center;
   }
   .productos-contenedor .productos-card .productos-card-img .card-img-4 {
     background-color: none;
-    width: 335px;
+    width: 155px;
     height: 250px;
     display: flex;
     justify-content: center;
@@ -283,7 +284,7 @@ header .navbar-toggler {
 }
 @media (min-width: 992px) {
   .productos-contenedor .productos-card .productos-card-texto h4 {
-    font-size: 40px;
+    font-size: 20px;
   }
 }
 .productos-contenedor .productos-card .productos-card-button {
@@ -344,10 +345,10 @@ header .navbar-toggler {
   margin: 0 auto;
 }
 .calidad-contenedor .calidad-imagen img {
-  width: 200px;
-  height: 220px;
+  width: 300px;
+  height: 350px;
   border-radius: 30px 30px 30px 30px;
-  box-shadow: 10px -6px 1px 1px rgb(92, 131, 116);
+  /*box-shadow: 10px -6px 1px 1px rgb(92, 131, 116);*/
   position: relative;
   z-index: 2;
   margin-bottom: 10px;
@@ -356,28 +357,28 @@ header .navbar-toggler {
   .calidad-contenedor .calidad-imagen img {
     width: 300px;
     height: 400px;
-    border-radius: 80px 0 80px 0;
+    border-radius: 30px 30px 30px 30px;
   }
 }
 @media (min-width: 768px) {
   .calidad-contenedor .calidad-imagen img {
     width: 350px;
     height: 400px;
-    border-radius: 100px 0 100px 0;
+    border-radius: 30px 30px 30px 30px;
   }
 }
 @media (min-width: 992px) {
   .calidad-contenedor .calidad-imagen img {
     width: 400px;
     height: 450px;
-    border-radius: 100px 0 100px 0;
+    border-radius: 30px 30px 30px 30px;
   }
 }
 @media (min-width: 1220px) {
   .calidad-contenedor .calidad-imagen img {
     width: 450px;
     height: 500px;
-    border-radius: 100px 0 100px 0;
+    border-radius: 30px 30px 30px 30px;
   }
 }
 .calidad-contenedor .calidad-descripcion {
@@ -500,80 +501,45 @@ header .navbar-toggler {
   display: flex;
   flex-wrap: nowrap;
   align-items: baseline;
-  gap: 10px;
+  gap: 1px;
   margin-top: 30px;
 }
-.nosotros-contenedor .nosotros-titulo {
-  background-image: url(/asset/img/mate-1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #ECE3CE;
-  padding: 20px;
-}
-.nosotros-contenedor .nosotros-titulo h2 {
-  font-size: 0px;
+.nosotros-contenedor .nosotros-img img {
+  width: 75%;
+  height: 100%;
 }
 .nosotros-contenedor .nosotros-texto {
   color: #ECE3CE;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .nosotros-contenedor .nosotros-texto p {
   font-size: 12px;
-  margin: 0 auto;
 }
 @media (min-width: 400px) {
-  .nosotros-contenedor .nosotros-titulo h2 {
-    font-size: 70px;
-  }
-  .nosotros-contenedor .nosotros-titulo h3 {
-    font-size: 30px;
-  }
   .nosotros-contenedor .nosotros-texto p {
     font-size: 15px;
   }
 }
 @media (min-width: 600px) {
-  .nosotros-contenedor .nosotros-titulo h2 {
-    font-size: 100px;
-  }
-  .nosotros-contenedor .nosotros-titulo h3 {
-    font-size: 60px;
-  }
   .nosotros-contenedor .nosotros-texto p {
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 @media (min-width: 700px) {
-  .nosotros-contenedor .nosotros-titulo h2 {
-    font-size: 110px;
-  }
-  .nosotros-contenedor .nosotros-titulo h3 {
-    font-size: 60px;
-  }
   .nosotros-contenedor .nosotros-texto p {
-    font-size: 30px;
+    font-size: 15px;
   }
 }
-@media (min-width: 900px) {
-  .nosotros-contenedor .nosotros-titulo h2 {
-    font-size: 150px;
-  }
-  .nosotros-contenedor .nosotros-titulo h3 {
-    font-size: 60px;
-  }
+@media (min-width: 992px) {
   .nosotros-contenedor .nosotros-texto p {
-    font-size: 35px;
+    font-size: 20px;
   }
 }
 @media (min-width: 1200px) {
-  .nosotros-contenedor .nosotros-titulo h2 {
-    font-size: 150px;
-  }
-  .nosotros-contenedor .nosotros-titulo h3 {
-    font-size: 70px;
-  }
   .nosotros-contenedor .nosotros-texto p {
-    font-size: 40px;
+    font-size: 20px;
   }
 }
 
