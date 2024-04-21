@@ -27,6 +27,9 @@ header .navbar-expand-lg .navbar-nav a {
   font-size: 30px;
   font-weight: bold;
 }
+header .navbar-toggler {
+  background-color: #040D12;
+}
 @media (min-width: 576px) {
   header .nav-logo {
     height: 100px;
@@ -108,7 +111,7 @@ header .navbar-expand-lg .navbar-nav a {
   align-items: center;
   justify-content: center;
   margin-top: 10px;
-  border-radius: 80px 20px;
+  border-radius: 80px 80px;
 }
 .productos-contenedor .productos-card .productos-card-img {
   margin-top: 10px;
@@ -252,14 +255,14 @@ header .navbar-expand-lg .navbar-nav a {
   flex-direction: column;
   width: 100%;
   padding: 30px;
-  background-color: #5C8374;
+  background-color: none;
   margin-top: 20px;
 }
 .calidad-contenedor .calidad-card {
   display: flex;
   flex-wrap: nowrap;
   align-content: space-between;
-  margin-top: 15px;
+  margin: 20px 0px;
 }
 .calidad-contenedor .calidad-imagen {
   display: flex;
@@ -271,6 +274,7 @@ header .navbar-expand-lg .navbar-nav a {
   width: 100px;
   height: 150px;
   border-radius: 50px 0 50px 0;
+  box-shadow: 15px 16px 0px 0px rgb(92, 131, 116);
   position: relative;
   z-index: 2;
 }
@@ -303,8 +307,9 @@ header .navbar-expand-lg .navbar-nav a {
   }
 }
 .calidad-contenedor .calidad-descripcion {
-  background-color: none;
+  background-color: #5C8374;
   color: #ECE3CE;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -373,6 +378,23 @@ header .navbar-expand-lg .navbar-nav a {
     font-size: 20px;
   }
 }
+@media (min-width: 1220px) {
+  .calidad-contenedor .calidad-descripcion h3 {
+    font-size: 40px;
+  }
+  .calidad-contenedor .calidad-descripcion h4 {
+    font-size: 30px;
+  }
+  .calidad-contenedor .calidad-descripcion p {
+    font-size: 25px;
+  }
+  .calidad-contenedor .calidad-descripcion a {
+    border: 1px solid #040D12;
+    background-color: #040D12;
+    font-size: 20px;
+  }
+}
+
 .nosotros-contenedor {
   background-color: #5C8374;
   display: flex;

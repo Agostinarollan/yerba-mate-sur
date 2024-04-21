@@ -4,14 +4,14 @@
     flex-direction: column;
     width: 100%;
     padding: 30px;
-    background-color: $color-terciario;
+    background-color: none;
     margin-top: 20px;
 
     .calidad-card{
         display: flex;
         flex-wrap: nowrap;
         align-content: space-between;
-        margin-top: 15px;
+        margin:20px 0px;
     }
     .calidad-imagen {
         display: flex;
@@ -22,6 +22,7 @@
             width: 100px;
             height: 150px;
             border-radius: 50px 0 50px 0;
+            box-shadow: 15px 16px 0px 0px rgb(92, 131, 116);
             position: relative;
             z-index: 2;
         }
@@ -55,8 +56,9 @@
         }
     }
     .calidad-descripcion {
-        background-color: none;
+        background-color: $color-terciario;
         color: $color-secundario;
+        border-radius: 10px;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -142,6 +144,23 @@
             }
         }
         @media (min-width: 1220px) {
+            h3 {
+                font-size: 40px;
+               
+            }
+            h4 {
+                font-size: 30px;
+                
+            }
+            p {
+                font-size: 25px;
+              
+            }
+            a{
+                border: 1px solid $color-primario;
+                background-color: $color-primario;
+                font-size: 20px; 
+            }
         }
 
     }

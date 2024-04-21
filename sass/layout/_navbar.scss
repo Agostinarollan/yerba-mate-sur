@@ -20,6 +20,9 @@ header{
         font-weight: bold;
        }
     }
+    .navbar-toggler {
+        background-color:$color-primario;
+    }
     @media (min-width: 576px) {
         .nav-logo{
             height: 100px;
@@ -58,4 +61,5 @@ header{
         }
         
     }
+    
 }
