@@ -497,22 +497,30 @@ header .navbar-toggler {
 }
 
 .nosotros-contenedor {
-  background-color: #5C8374;
+  background-image: url(/asset/img/Slice\ 1bg-yerbamate1.png);
+  background-size: cover;
   display: flex;
   flex-wrap: nowrap;
-  align-items: baseline;
-  gap: 1px;
-  margin-top: 30px;
+  align-items: center;
+  gap: 7px;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: center;
+  margin: 0 auto;
 }
 .nosotros-contenedor .nosotros-img img {
-  width: 75%;
-  height: 100%;
+  width: 183px;
+  height: 400px;
+  margin-bottom: 10px;
 }
 .nosotros-contenedor .nosotros-texto {
-  color: #ECE3CE;
+  margin-bottom: 10px;
+  color: #5C8374;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  text-align: center;
+  width: 25%;
 }
 .nosotros-contenedor .nosotros-texto p {
   font-size: 12px;
@@ -523,23 +531,50 @@ header .navbar-toggler {
   }
 }
 @media (min-width: 600px) {
+  .nosotros-contenedor .nosotros-img img {
+    width: 283px;
+    height: 450px;
+  }
   .nosotros-contenedor .nosotros-texto p {
     font-size: 15px;
   }
 }
 @media (min-width: 700px) {
+  .nosotros-contenedor .nosotros-img img {
+    width: 393px;
+    height: 600px;
+  }
+  .nosotros-contenedor .nosotros-texto {
+    width: 35px;
+  }
   .nosotros-contenedor .nosotros-texto p {
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 @media (min-width: 992px) {
+  .nosotros-contenedor .nosotros-img img {
+    width: 493px;
+    height: 850px;
+  }
+  .nosotros-contenedor .nosotros-texto {
+    width: 40%;
+    gap: 38px;
+  }
   .nosotros-contenedor .nosotros-texto p {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 @media (min-width: 1200px) {
+  .nosotros-contenedor .nosotros-img img {
+    width: 493px;
+    height: 850px;
+  }
+  .nosotros-contenedor .nosotros-texto {
+    width: 40%;
+    gap: 38px;
+  }
   .nosotros-contenedor .nosotros-texto p {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 

@@ -1,21 +1,29 @@
 .nosotros-contenedor{
-    background-color: $color-terciario;
+    background-image: url(/asset/img/Slice\ 1bg-yerbamate1.png);
+    background-size: cover;
     display: flex;
     flex-wrap: nowrap;
-    align-items: baseline;
-    gap:1px;
-    margin-top: 30px;
+    align-items: center;
+    gap: 7px;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: center;
+    margin: 0 auto;
     .nosotros-img{
        img{
-        width: 75%;
-        height: 100%;
+        width: 183px;
+        height: 400px;
+        margin-bottom: 10px;
        }
     }
     .nosotros-texto{
-        color: $color-secundario;
+        margin-bottom: 10px;
+        color: $color-terciario;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        text-align: center;
+        width: 25%;
         p{
             font-size: 12px;
             
@@ -31,7 +39,12 @@
         }
     }
     @media (min-width: 600px) {
-         
+        .nosotros-img{
+            img{
+             width: 283px;
+             height: 450px;
+            }
+        }
         
         .nosotros-texto{
             p{
@@ -40,27 +53,49 @@
         }
     }
     @media (min-width: 700px) {
-       
+        
+        .nosotros-img{
+            img{
+             width: 393px;
+             height: 600px;
+            }
+        }
         .nosotros-texto{
+            width:35px;
             
             p{
-                font-size: 15px;
+                font-size: 20px;
             }    
         }
     }
     @media (min-width: 992px) {
         
-        .nosotros-texto{
+        .nosotros-img{
+            img{
+             width: 493px;
+             height: 850px;
+            }
+        }
+        .nosotros-texto{  
+            width: 40%;
+            gap:38px;
             p{
-                font-size: 20px;
+                font-size: 25px;
             }    
         }
     }
     @media (min-width: 1200px) {
-        
-        .nosotros-texto{  
+        .nosotros-img{
+            img{
+             width: 493px;
+             height: 850px;
+            }
+        }
+        .nosotros-texto{ 
+            width: 40%;
+            gap:38px;
             p{
-                font-size: 20px;
+                font-size: 25px;
             }    
         }
     }
