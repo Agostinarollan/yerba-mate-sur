@@ -1,14 +1,14 @@
 header{
     background-color: $color-primario;
     .nav-logo{
-        background-color:$color-primario;
-        height: 70px;
+        background-color: $color-primario;
+        height: 120px;
         display: flex;
         justify-content: center;
         align-items: center;
         img{
-           width: 50px;
-           height: 50px;
+           width: 130px;
+           height: 100px;
         }  
     }
     .navbar-expand-lg .navbar-nav{
@@ -23,12 +23,13 @@ header{
     .navbar-toggler {
         background-color:$color-primario;
     }
+
     @media (min-width: 576px) {
         .nav-logo{
-            height: 100px;
+            height: 150px;
             img{
-                width: 70px;
-                height: 70px;
+                width: 150px;
+                height: 130px;
             }
         }
     }
@@ -36,8 +37,8 @@ header{
         .nav-logo{
             height: 150px;
             img{
-                width: 100px;
-                height: 100px;
+                width: 160px;
+                height: 130px;
             }
         }
     }
@@ -45,8 +46,8 @@ header{
         .nav-logo{
             height: 170px;
             img{
-                width: 150px;
-                height: 150px;
+                width: 160px;
+                height: 130px;
             }
         }
         
@@ -55,7 +56,7 @@ header{
         .nav-logo{
             height: 200px;
             img{
-                width: 170px;
+                width: 190px;
                 height: 170px;
             }
         }

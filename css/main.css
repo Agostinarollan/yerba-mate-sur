@@ -9,14 +9,14 @@ header {
 }
 header .nav-logo {
   background-color: #040D12;
-  height: 70px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 header .nav-logo img {
-  width: 50px;
-  height: 50px;
+  width: 130px;
+  height: 100px;
 }
 header .navbar-expand-lg .navbar-nav {
   margin: 0 auto;
@@ -32,11 +32,11 @@ header .navbar-toggler {
 }
 @media (min-width: 576px) {
   header .nav-logo {
-    height: 100px;
+    height: 150px;
   }
   header .nav-logo img {
-    width: 70px;
-    height: 70px;
+    width: 150px;
+    height: 130px;
   }
 }
 @media (min-width: 768px) {
@@ -44,8 +44,8 @@ header .navbar-toggler {
     height: 150px;
   }
   header .nav-logo img {
-    width: 100px;
-    height: 100px;
+    width: 160px;
+    height: 130px;
   }
 }
 @media (min-width: 992px) {
@@ -53,8 +53,8 @@ header .navbar-toggler {
     height: 170px;
   }
   header .nav-logo img {
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 130px;
   }
 }
 @media (min-width: 1220px) {
@@ -62,7 +62,7 @@ header .navbar-toggler {
     height: 200px;
   }
   header .nav-logo img {
-    width: 170px;
+    width: 190px;
     height: 170px;
   }
 }
